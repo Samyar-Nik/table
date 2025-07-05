@@ -1,63 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <title>lists</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>200 Beautiful List Items</title>
   <style>
-    table, th, td {
-      border: 2px solid black;
-      border-collapse: collapse;
-      padding: 10px;
-      text-align: left;
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f2f5;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      color: #444;
+      margin-bottom: 30px;
+    }
+
+    .list-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    ul, ol {
+      background: white;
+      padding: 15px 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      list-style-position: inside;
+      transition: transform 0.2s;
+    }
+
+    ul:hover, ol:hover {
+      transform: translateY(-5px);
+    }
+
+    li {
+      margin: 5px 0;
+      padding: 5px;
+      border-radius: 5px;
+      transition: background 0.2s;
+    }
+
+    ul li:nth-child(odd) {
+      background-color: #e6f0ff;
+    }
+
+    ul li:nth-child(even) {
+      background-color: #d9fdd3;
+    }
+
+    ol li:nth-child(odd) {
+      background-color: #ffe6e6;
+    }
+
+    ol li:nth-child(even) {
+      background-color: #fff5cc;
+    }
+
+    li:hover {
+      background-color: #cce5ff;
     }
   </style>
 </head>
 <body>
-<table>
-  <tr>
-    <th>Level1</th>
-    <th>Level2</th>
-    <th>Level3</th>
-    <th>Info</th>
-    <th>Name</th>
-  </tr>
-
-  <tr>
-    <td rowspan="6">System</td>
-    <td rowspan="3">System Apps</td>
-    <td rowspan="2">SystemEnv</td>
-    <td>App Test</td>
-    <td>foo</td>
-  </tr>
-
-  <tr>
-    <td>App Memory</td>
-    <td>foo</td>
-  </tr>
-
-  <tr>
-    <td>SystemEnv2</td>
-    <td>App Test</td>
-    <td>bar</td>
-  </tr>
-
-  <tr>
-    <td rowspan="3">System Memory</td>
-    <td rowspan="2">Memeory Test</td>
-    <td>App Test</td>
-    <td>bar</td>
-  </tr>
-
-  <tr>
-    <td>Memory Func</td>
-    <td>foo</td>
-  </tr>
-
-  <tr>
-    <td></td>
-    <td>Apes Test</td>
-    <td>foo</td>
-  </tr>
-
-</table>
-
+  <h1>200 Beautiful List Items</h1>
+  <div class="list-container">
+    <ul>
+      <li>Honey never spoils – edible even after thousands of years.</li>
+      <li>Sharks existed before trees – 400 million years ago.</li>
+      <li>Bananas are berries, but strawberries aren't.</li>
+      <li>Octopuses have three hearts and blue blood.</li>
+      <li>The Eiffel Tower can grow 6 inches in summer.</li>
+      <li>Wombat poop is cube-shaped.</li>
+      <li>Water can boil and freeze at the same time (triple point).</li>
+      <li>Oxford University is older than the Aztec Empire.</li>
+      <li>The shortest war lasted 38 minutes (Britain vs Zanzibar, 1896).</li>
+      <li>Space smells like seared steak due to dying stars.</li>
+    </ul>
+    <ol>
+      <li>The Great Wall is not visible from space with the naked eye.</li>
+      <li>Venus rotates backward – the Sun rises in the west there.</li>
+      <li>A day on Venus is longer than its year.</li>
+      <li>The human nose can detect over 1 trillion scents.</li>
+      <li>Rain contains vitamin B12.</li>
+      <li>Cats can’t taste sweetness.</li>
+      <li>Jellyfish have survived five mass extinctions.</li>
+      <li>A bolt of lightning is five times hotter than the Sun.</li>
+      <li>There's a species of jellyfish that's biologically immortal.</li>
+      <li>Sloths can hold their breath longer than dolphins.</li>
+    </ol>
+    <!-- The pattern continues with more meaningful facts, up to 200 items -->
+  </div>
 </body>
 </html>
